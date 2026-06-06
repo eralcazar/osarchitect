@@ -1,0 +1,12 @@
+{
+  "name": "erp-os-v2",
+  "version": "1.0.0",
+  "description": "ERP OS - Fresh Start",
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "mobile"
+  ]
+}
