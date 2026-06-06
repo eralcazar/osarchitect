@@ -1,0 +1,31 @@
+🚀 RAILWAY SETUP — READY TO COMMIT
+
+═══════════════════════════════════════════════════════════════
+
+ARCHIVOS CREADOS/MODIFICADOS:
+✅ RAILWAY_SETUP.md          — Guía completa de deployment
+✅ backend/src/.env.local    — Configuración local (actualizar con tus keys)
+✅ backend/tsconfig.json     — Configuración TypeScript
+
+═══════════════════════════════════════════════════════════════
+
+PRÓXIMOS PASOS:
+
+1. Edita backend/src/.env.local con tus credenciales:
+   - DATABASE_URL (de Railway PostgreSQL)
+   - ANTHROPIC_API_KEY
+   - OPENAI_API_KEY
+
+2. Sigue RAILWAY_SETUP.md paso a paso
+
+3. Test local:
+   npm run dev
+
+4. Deploy a Railway
+
+═══════════════════════════════════════════════════════════════
+
+COMMIT MESSAGE SUGERIDO:
+"feat: setup Railway deployment - add tsconfig, env config, railway guide"
+
+═══════════════════════════════════════════════════════════════
