@@ -18,7 +18,8 @@
     "uuid": "^10.0.0",
     "@anthropic-ai/sdk": "^0.24.0",
     "openai": "^4.71.0",
-    "jsonwebtoken": "^9.1.2"
+    "jsonwebtoken": "^9.1.2",
+    "axios": "^1.7.0"
   },
   "devDependencies": {
     "typescript": "^5.5.0",

@@ -5,6 +5,7 @@ import "dotenv/config";
 import architectRoutes from "./routes/architect";
 import crmRoutes from "./routes/crm";
 import authRoutes from "./routes/auth";
+import deployRoutes from "./routes/deploy";
 
 const app = new Hono();
 
@@ -23,6 +24,7 @@ app.use(async (c, next) => {
 app.route("/api/auth", authRoutes);
 app.route("/api/architect", architectRoutes);
 app.route("/api/crm", crmRoutes);
+app.route("/api/deploy", deployRoutes);
 
 // Health check
 app.get("/health", (c) => {
@@ -38,6 +40,7 @@ app.get("/", (c) => {
       "/api/auth (signup, login, verify)",
       "/api/architect (chat with AI)",
       "/api/crm (contacts, deals)",
+      "/api/deploy (autonomous commit)",
       "/health",
     ],
   });
