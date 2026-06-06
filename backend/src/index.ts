@@ -4,6 +4,7 @@ import { cors } from "hono/cors";
 import "dotenv/config";
 import architectRoutes from "./routes/architect";
 import crmRoutes from "./routes/crm";
+import authRoutes from "./routes/auth";
 
 const app = new Hono();
 
@@ -19,6 +20,7 @@ app.use(async (c, next) => {
 });
 
 // Routes
+app.route("/api/auth", authRoutes);
 app.route("/api/architect", architectRoutes);
 app.route("/api/crm", crmRoutes);
 
@@ -32,7 +34,12 @@ app.get("/", (c) => {
   return c.json({
     message: "ERP OS Backend",
     version: "1.0.0",
-    endpoints: ["/api/architect", "/api/crm", "/health"],
+    endpoints: [
+      "/api/auth (signup, login, verify)",
+      "/api/architect (chat with AI)",
+      "/api/crm (contacts, deals)",
+      "/health",
+    ],
   });
 });
 

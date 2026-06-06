@@ -17,13 +17,15 @@
     "dotenv": "^16.4.5",
     "uuid": "^10.0.0",
     "@anthropic-ai/sdk": "^0.24.0",
-    "openai": "^4.71.0"
+    "openai": "^4.71.0",
+    "jsonwebtoken": "^9.1.2"
   },
   "devDependencies": {
     "typescript": "^5.5.0",
     "tsx": "^4.17.0",
     "@types/node": "^22.5.0",
     "@types/pg": "^8.11.0",
-    "@types/uuid": "^9.0.8"
+    "@types/uuid": "^9.0.8",
+    "@types/jsonwebtoken": "^9.0.7"
   }
 }
